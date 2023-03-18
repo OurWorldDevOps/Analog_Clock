@@ -79,7 +79,138 @@
 
   /* clock */
 
-  .clock-container{
+  .clock_container{
     height: 100vh;
     grid-template-rows: 1fr max-content;
+  }
+  .clock_circles{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    box-shadow: -6px -6px 16px var(--white-color),
+                6px 6px 16px hsla(var(--hue-color),30% ,86%,1),
+                inset  6px 6px 16px hsla(var(--hue-color), 30% ,86%,1),
+               inset -6px -6px 16px var(--white-color);
+
+   border-radius: 50%;
+   justify-self: center;
+    display: flex;
+    justify-content: center;
+align-items: center;
+
+  }
+
+  .clock_content{
+    align-self: center;
+    row-gap: 3.5rem;
+  }
+
+  .clock_twelve,
+  .clock_three,
+  .clock_six,
+  .clock_nine{
+    position:absolute;
+    width: 1rem;
+    height: 1px;
+    background-color: var(--text-color-light);
+  }
+
+  .clock_twelve,
+  .clock_six{
+    transform: translateX(-50%) rotate(90deg);
+  }
+
+  .clock_twelve{
+    top: 1.25rem;
+    left:50%
+  }
+
+  .clock_three{
+    top: 50%;
+    right: .75rem;
+  }
+  .clock_six{
+    bottom: 1.25rem;
+    left: 50%;
+  }
+  .clock_nine{
+    left: .75rem;
+    top: 50%;
+  }
+
+  .clock_rounder{
+    width: .85rem;
+    height: .85rem;
+    background-color:var(--first-color) ;
+    border-radius: 50%;
+    border: 2px solid var(--body-color);
+    z-index: var(--z-tooltip);
+  }
+
+  .clock_hour,
+  .clock_minute,
+  .clock_second{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+  }
+
+  .clock_hour{
+    width: 105px;
+    height: 105px;
+  }
+
+  .clock_hour::before{
+    content:  '';
+    position: absolute;
+    background-color: var(--text-color);
+    width: 3rem;
+    width: .25rem;
+    height: 3rem;
+    border-radius: .75rem;
+    z-index: var(--z-normal);
+  }
+
+  .clock_minute{
+    width: 136px;
+    height: 136px;
+  }
+  .clock_minute::before{
+    content: '';
+    position: absolute;
+    background-color: var(--text-color);
+    width: .25rem;
+    height: 4rem;
+    border-radius: .75rem;
+    z-index: var(--z-normal);
+  }
+
+  .clock_second{
+    width: 130px;
+    height: 100px;
+  }
+
+  .clock_second::before {
+    content: '';
+    position: absolute;
+    background-color: var(--first-color);
+    width: .125rem;
+    height: 5rem;
+    border-radius: .75rem;
+    z-index: var(--z-normal);
+  }
+
+  .clock_logo{
+    width: max-content;
+    justify-self: center;
+    margin-bottom: var(--mb-2-5);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+    color: var(--text-color-light);
+    transition: .3s; 
+  
+  }
+
+  .color_logo:hover{
+    color:var(--first-color);
   }

@@ -29,6 +29,8 @@
     --mb-1: 1rem;
     --mb-1-5: 1.5rem;
     --mb-2-5: 2.5rem;
+    --mb-5:5rem;
+    --mb-8:8rem;
   
     /*========== z index ==========*/
     --z-normal: 1;
@@ -68,13 +70,16 @@
   /* reusable css classes  */
 
   .container {
-    max-width: 968px;
+    max-width: 960px;
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
     display: flex;
     align-items: center;
+    /* max-width: 455px; */
+    /* max-height: 679px; */
     justify-content: center;
-    margin-left: 340px;
+    /* margin-left: 250px;
+    margin-right: 250px; */
   }
 
   .grid{
@@ -220,4 +225,31 @@ align-items: center;
 
   .color_logo:hover{
     color:var(--first-color);
+  }
+
+  /* digital clock  */
+
+  .clock_text{
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .clock_text-hour,
+  .clock_text-minute{
+    font-size: var(--biggest-font-size);
+    font-weight: var(--font-medium);
+    color: var(--title-color);
+ }
+  .clock_text-ampm{
+    font-size: var(--tiny-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    margin-left: var(--mb-0-25);
+  }
+
+  .clock_date{
+    text-align: center;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
   }

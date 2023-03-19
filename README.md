@@ -1,13 +1,18 @@
 # Analog Clock UI
 
-A brief description of what this project does and who it's for
-
+- [Analog Clock](https://ourworlddevops.github.io/Analog_Clock/)
 ## Authors
 
 - [@Yash_varpe ](https://github.com/YashVarpe05)
 - [@siddent ](https://github.com/emplooyee)
 
-## Authors
+
+## Screenshots
+![clock](https://user-images.githubusercontent.com/104847857/226172747-058e7ecc-09aa-404f-9a89-25612eff471b.png)
+
+
+
+## Functionality
 
 - Beautiful responsive clock UI design using HTML, CSS, and JAVASCRIPT.
 - Contains an elegant Neumorphism watch.
@@ -21,8 +26,7 @@ A brief description of what this project does and who it's for
 
 **Client:** Html, Css, Javascript
 
-## Screenshots
-![clock](https://user-images.githubusercontent.com/104847857/226172747-058e7ecc-09aa-404f-9a89-25612eff471b.png)
+
 
 ## Support
 

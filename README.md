@@ -28,6 +28,11 @@ A brief description of what this project does and who it's for
 
 
 
+## Screenshots
+![clock](https://user-images.githubusercontent.com/104847857/226172747-058e7ecc-09aa-404f-9a89-25612eff471b.png)
+![Uploading clock.png…]()
+
+
 ## Support
 
 For support, email devworld010@gmail.com & join our 
@@ -38,8 +43,6 @@ OurWorldDevops Organization.
 ![Logo](https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg)
 
 
-## Screenshots
-![Uploading clock.png…]()
 
 
 

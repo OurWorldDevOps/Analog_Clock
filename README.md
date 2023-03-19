@@ -1,8 +1,6 @@
-
 # Analog Clock UI
 
 A brief description of what this project does and who it's for
-
 
 ## Authors
 
@@ -19,19 +17,12 @@ A brief description of what this project does and who it's for
 - Developed first with the Mobile First methodology, then for desktop.
 - Compatible with all mobile devices and with a beautiful and pleasant user interface
  
-
-
-## Tech Stack
+ ## Tech Stack
 
 **Client:** Html, Css, Javascript
 
-
-
-
 ## Screenshots
 ![clock](https://user-images.githubusercontent.com/104847857/226172747-058e7ecc-09aa-404f-9a89-25612eff471b.png)
-![Uploading clock.png…]()
-
 
 ## Support
 

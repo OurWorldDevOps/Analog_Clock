@@ -29,9 +29,7 @@
     --mb-1: 1rem;
     --mb-1-5: 1.5rem;
     --mb-2-5: 2.5rem;
-    --mb-5:5rem;
-    --mb-8:8rem;
-  
+    
     /*========== z index ==========*/
     --z-normal: 1;
     --z-tooltip: 10;
@@ -77,7 +75,7 @@ body.dark-theme {
   /* reusable css classes  */
 
   .container {
-    max-width: 960px;
+    max-width: 968px;
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
    
@@ -107,7 +105,7 @@ body.dark-theme {
     display: flex;
     justify-content: center;
 align-items: center;
-
+ transition: .5s;
   }
 
   .clock_content{
@@ -295,7 +293,7 @@ align-items: center;
       margin-left: auto;
       margin-right: auto;
     }
-    .clock__logo {
+    .clock_logo {
       margin-bottom: 3rem;
     }
   }

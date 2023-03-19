@@ -41,8 +41,6 @@ const clockText = () => {
 	} else {
 		ampm = "AM";
 	}
-	// time show
-	(texthour.innerHTML = `${hh}:`), (textminute.innerHTML = `${mm}`);
 	//show am or pm
 	textampm.innerHTML = ampm;
 	// detect when 0 am and transform to 12 am
@@ -57,5 +55,27 @@ const clockText = () => {
 	if (mm < 10) {
 		mm = `0${mm}`;
 	}
+	// time show
+	(texthour.innerHTML = `${hh}:`),
+		(textminute.innerHTML = `${mm}:`),
+		(textsecond.innerHTML = `${ss}`);
+	// show the day ,month and year
+	let months = [
+		"Jan",
+		"Feb",
+		"Mar",
+		"Apr",
+		"May",
+		"Jun",
+		"Jul",
+		"Aug",
+		"Sep",
+		"Oct",
+		"Nov",
+		"Dec",
+	];
+	(dateday.innerHTML = day), (datemonth.innerHTML = `${months[month]},`);
+	dateyear.innerHTML = year;
 };
+
 setInterval(clockText, 1000);

@@ -241,6 +241,14 @@ align-items: center;
     font-weight: var(--font-medium);
     color: var(--title-color);
  }
+ .clock_text-second{
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-medium);
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+/* margin-top: -1px; */
+}
   .clock_text-ampm{
     font-size: var(--tiny-font-size);
     color: var(--title-color);

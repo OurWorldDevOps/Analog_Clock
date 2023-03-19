@@ -1,15 +1,15 @@
-const hour = document.getElementById("clock-hour"),
-	minutes = document.getElementById("clock-minutes"),
-	seconds = document.getElementById("clock-seconds");
+setInterval(() => {
+	d = new Date();
 
-const clock = () => {
-	let date = new Date();
-	let hh = date.getHours() * 30,
-		mm = date.getMinutes() * 6,
-		ss = date.getSeconds() * 6;
+	htime = d.getHours();
+	mtime = d.getMinutes();
+	stime = d.getSeconds();
 
-	hour.style.transform = `rotateZ(${hh + mm / 12}deg)`;
-	minutes.style.transform = `rotateZ(${mm}deg)`;
-	seconds.style.transform = `rotateZ(${ss}deg)`;
-};
-setInterval(clock, 1000);
+	hrotation = 30 * htime + mtime / 2;
+	mrotation = 6 * mtime;
+	srotation = 6 * stime;
+
+	clock_hour.style.transform = `rotate(${hrotation}deg)`;
+	clock_minutes.style.transform = `rotate(${mrotation}deg)`;
+	clock_seconds.style.transform = `rotate(${srotation}deg)`;
+}, 1000);
